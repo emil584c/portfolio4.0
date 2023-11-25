@@ -1,7 +1,7 @@
 import "./styles/app.scss";
-import "./styles/css-reset.scss";
 import PrimaryCover from "./components/PrimaryCover.jsx";
 import AboutMe from "./components/AboutMe";
+import ToolsSection from "./components/ToolsSection";
 import MyWork from "./components/MyWork";
 import ContactSection from "./components/ContactSection";
 
@@ -10,6 +10,7 @@ function App() {
     <>
       <PrimaryCover />
       <AboutMe />
+      <ToolsSection />
       <MyWork />
       <ContactSection />
     </>

@@ -1,5 +1,5 @@
 function MyWork() {
-  return;
+  return <></>;
 }
 
 export default MyWork;

@@ -1,7 +1,7 @@
 function PrimaryCover() {
   return (
     <>
-      <p>heyeyey</p>
+      <p className="title">heyeyey</p>
     </>
   );
 }
