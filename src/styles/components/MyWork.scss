@@ -1,0 +1,83 @@
+.work-section {
+  padding-top: 200px;
+
+  &__title {
+    @include break(laptop) {
+      font-size: 40px !important;
+    }
+
+    @include break(tablet) {
+      font-size: 36px !important;
+    }
+
+    @include break(mobile) {
+      font-size: 32px !important;
+    }
+  }
+
+  &__project {
+    position: relative;
+    display: flex;
+    padding: 48px 100px 48px 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #fafafa;
+
+    @include break(tablet) {
+      padding: 32px 60px 32px 0;
+    }
+
+    @include break(mobile) {
+      padding: 32px 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__project-title {
+    font-size: 40px;
+    font-weight: 500;
+
+    @include break(laptop) {
+      font-size: 36px;
+    }
+
+    @include break(tablet) {
+      font-size: 32px;
+    }
+
+    @include break(mobile) {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__project-text {
+    font-size: 20px;
+
+    @include break(laptop) {
+      font-size: 18px;
+    }
+
+    @include break(mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .title-box {
+    margin-bottom: 100px;
+
+    @include break(mobile) {
+      margin-bottom: 48px;
+    }
+  }
+}
