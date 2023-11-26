@@ -1,9 +1,9 @@
-function ToolBox(img, color, alt, text) {
+function ToolBox({ img, color, alt, text }) {
   return (
     <>
       <div className="tools-section__tool-box">
         <div
-          style={{ backgroundColor: { color } }}
+          style={{ backgroundColor: color }}
           className="tools-section__image-container"
         >
           <img

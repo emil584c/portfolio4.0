@@ -1,8 +1,34 @@
 .about-section {
-    padding: 180px 0 200px 0;
+  padding: 180px 0 200px 0;
 
-    &__text {
-        max-width: 562px;
-        font-size: 20px;
+  @include break(mobile) {
+    padding: 100px 0;
+  }
+
+  &__text {
+    max-width: 562px;
+    font-size: 20px;
+
+    @include break(tablet) {
+      font-size: 18px;
     }
+
+    @include break(mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    @include break(laptop) {
+      font-size: 40px !important;
+    }
+
+    @include break(tablet) {
+      font-size: 36px !important;
+    }
+
+    @include break(mobile) {
+      font-size: 32px !important;
+    }
+  }
 }
