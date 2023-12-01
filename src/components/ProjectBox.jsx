@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ProjectBox({ title, firstText, secondText, link }) {
   return (
     <>
@@ -9,10 +11,10 @@ function ProjectBox({ title, firstText, secondText, link }) {
             <p className="work-section__project-text">{secondText}</p>
           )}
         </div>
-        {/* <a
+        <Link
           className="work-section__link"
-          href={link}
-        ></a> */}
+          to={`/portfolio/${link}`}
+        ></Link>
       </article>
     </>
   );

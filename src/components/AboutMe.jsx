@@ -1,7 +1,10 @@
 function AboutMe() {
   return (
     <>
-      <section className="about-section">
+      <section
+        className="about-section"
+        id="about"
+      >
         <div className="about-section__inner page-container">
           <div className="title-box">
             <h2 className="about-section__title">About me</h2>

@@ -1,0 +1,132 @@
+.primary-cover {
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 240px 0 300px;
+
+    @include break(laptop) {
+      padding: 240px 0 190px;
+    }
+
+    @include break(mobile) {
+      padding: 130px 0 240px;
+    }
+  }
+
+  &__title {
+    max-width: 965px;
+
+    @include break(laptop) {
+      font-size: 60px !important;
+      max-width: 710px;
+    }
+
+    @include break(tablet) {
+      font-size: 42px !important;
+      max-width: 496px;
+    }
+
+    @include break(mobile) {
+      font-size: 36px !important;
+      max-width: 496px;
+      text-align: center;
+      line-height: 120%;
+    }
+  }
+
+  &__shape {
+    border-radius: 40px;
+    overflow: hidden;
+
+    &--blue {
+      height: 606px;
+      width: 213px;
+      background-color: #0565f4;
+      transform: rotate(24.952deg);
+      position: absolute;
+      left: 0;
+      top: 40px;
+      z-index: 2;
+
+      @include break(laptop) {
+        width: 151px;
+        height: 429px;
+
+        img {
+          max-height: 335px;
+          top: 100px;
+        }
+      }
+
+      @include break(laptop) {
+        width: 129px;
+        height: 367px;
+        left: 30px;
+
+        img {
+          max-height: 287px;
+          top: 100px;
+        }
+      }
+
+      @include break(mobile) {
+        width: 92px;
+        height: 263px;
+        left: unset;
+        top: unset;
+        bottom: -40px;
+        right: 50px;
+        transform: rotate(36deg);
+
+        img {
+          max-height: 205px;
+          top: 60px;
+          transform: rotate(-36deg);
+          left: 10px;
+          bottom: -16px;
+        }
+      }
+    }
+
+    &--pink {
+      height: 577px;
+      width: 202px;
+      background-color: #e81cff;
+      position: absolute;
+      transform: rotate(-65.517deg);
+      bottom: -300px;
+      left: 450px;
+      z-index: 1;
+
+      @include break(laptop) {
+        height: 414px;
+        width: 145px;
+        bottom: -240px;
+        left: 270px;
+      }
+
+      @include break(tablet) {
+        height: 354px;
+        width: 124px;
+        bottom: -170px;
+        left: 270px;
+      }
+
+      @include break(mobile) {
+        height: 247px;
+        width: 86px;
+        left: 80px;
+        bottom: -20px;
+        transform: rotate(-50deg);
+        display: none;
+      }
+    }
+  }
+
+  &__profile-image {
+    transform: rotate(-25deg);
+    position: relative;
+    top: 150px;
+  }
+}

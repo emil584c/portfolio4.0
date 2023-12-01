@@ -3,7 +3,10 @@ import ToolBox from "./ToolBox";
 function ToolsSection() {
   return (
     <>
-      <section className="tools-section">
+      <section
+        className="tools-section"
+        id="tools"
+      >
         <div className="tools-section__inner page-container">
           <div className="title-box">
             <h2 className="tools-section__title">My tools</h2>

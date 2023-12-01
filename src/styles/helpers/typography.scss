@@ -6,6 +6,7 @@ h3,
 h4,
 h5,
 h6,
+a,
 p {
   font-family: "Poppins", sans-serif;
   color: #fafafa;
@@ -18,7 +19,7 @@ h3 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 80px !important;
   font-weight: 900;
   line-height: 110%;
 }
