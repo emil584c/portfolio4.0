@@ -1,0 +1,45 @@
+.portfolio-item {
+  padding: 100px 0;
+
+  &__title {
+    font-size: 70px !important;
+
+    @include break(laptop) {
+      font-size: 56px !important;
+      max-width: 710px;
+    }
+
+    @include break(tablet) {
+      font-size: 42px !important;
+      max-width: 496px;
+    }
+
+    @include break(mobile) {
+      font-size: 36px !important;
+      max-width: 496px;
+      text-align: center;
+      line-height: 120%;
+    }
+  }
+
+  &__date {
+    font-size: 14px;
+    font-weight: 275;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    max-width: 800px;
+    font-size: 18px;
+
+    @include break(laptop) {
+      font-size: 18px;
+      max-width: 550px;
+    }
+
+    @include break(tablet) {
+      font-size: 16px;
+      max-width: 550px;
+    }
+  }
+}

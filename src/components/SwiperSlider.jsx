@@ -15,30 +15,36 @@ function SwiperSlider({ img1, img2, img3 }) {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <div className="swiper-slider__image-container">
-            <img
-              src={img1}
-              alt=""
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-slider__image-container">
-            <img
-              src={img2}
-              alt=""
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-slider__image-container">
-            <img
-              src={img3}
-              alt=""
-            />
-          </div>
-        </SwiperSlide>
+        {img1 && (
+          <SwiperSlide>
+            <div className="swiper-slider__image-container">
+              <img
+                src={img1}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
+        )}
+        {img2 && (
+          <SwiperSlide>
+            <div className="swiper-slider__image-container">
+              <img
+                src={img2}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
+        )}
+        {img3 && (
+          <SwiperSlide>
+            <div className="swiper-slider__image-container">
+              <img
+                src={img3}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
+        )}
       </Swiper>
     </div>
   );

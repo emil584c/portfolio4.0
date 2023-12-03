@@ -1,5 +1,6 @@
 .work-section {
-  padding-top: 200px;
+  padding: 200px 0 100px;
+  $self: &;
 
   &__title {
     @include break(laptop) {
@@ -15,6 +16,31 @@
     }
   }
 
+  &__projects-container {
+    &:hover {
+      #{$self}__project {
+        opacity: 0.4;
+
+        &:hover {
+          padding: 48px 100px 48px 32px;
+          opacity: 1;
+
+          &::after {
+            height: 100%;
+          }
+
+          #{$self}__project-title {
+            color: #070707 !important;
+          }
+
+          #{$self}__project-text {
+            color: #070707 !important;
+          }
+        }
+      }
+    }
+  }
+
   &__project {
     position: relative;
     display: flex;
@@ -23,6 +49,7 @@
     align-items: center;
     width: 100%;
     border-bottom: 2px solid #fafafa;
+    transition: opacity 700ms, padding 300ms;
 
     @include break(tablet) {
       padding: 32px 60px 32px 0;
@@ -33,11 +60,25 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fafafa;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 0px;
+      transition: height 500ms;
+      z-index: -1;
+    }
   }
 
   &__project-title {
     font-size: 40px;
     font-weight: 500;
+    transition: color 300ms;
+    transition-delay: 100ms;
 
     @include break(laptop) {
       font-size: 36px;
@@ -55,6 +96,8 @@
 
   &__project-text {
     font-size: 20px;
+    transition: color 300ms;
+    transition-delay: 100ms;
 
     @include break(laptop) {
       font-size: 18px;

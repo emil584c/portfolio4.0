@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function HeaderSection() {
   const [show, setShow] = useState(false);
@@ -7,18 +8,29 @@ function HeaderSection() {
     <>
       <header className={`header-section ${show ? "show" : ""}`}>
         <nav className="header-section__inner">
-          <a className="header-section__logo">lind.gg</a>
+          <Link
+            to={"/"}
+            className="header-section__logo"
+          >
+            lind.gg
+          </Link>
           <ul>
             <li>
-              <a href="#about">About</a>
+              <Link
+                to={"/#about"}
+                href="#about"
+              >
+                About
+              </Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to={"/#work"}>Projects</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to={"/#contact"}>Contact</Link>
             </li>
           </ul>
+
           <div
             onClick={() => setShow(!show)}
             className="header-section__hamburger-menu"

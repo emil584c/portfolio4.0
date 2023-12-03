@@ -7,32 +7,13 @@ function MyWork() {
     <>
       <section
         className="work-section"
-        id="projects"
+        id="work"
       >
         <div className="work-section__inner page-container">
           <div className="title-box">
             <h2 className="tools-section__title">My work</h2>
           </div>
           <div className="work-section__projects-container">
-            {/* <ProjectBox
-              title={"Morgenfest"}
-              firstText={"Website Development"}
-              link={"Morgenfest"}
-              description={"Text for Project 1"}
-            />
-            <ProjectBox
-              title={"Morgenfest"}
-              firstText={"Website Development"}
-              link={2}
-              description={"Text for Project 2"}
-            />
-            <ProjectBox
-              title={"Morgenfest"}
-              firstText={"Website Development"}
-              link={3}
-              description={"Text for Project 3"}
-            /> */}
-
             {portfolioItems.map((item) => (
               <ProjectBox
                 key={item.id}
