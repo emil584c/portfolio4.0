@@ -6,8 +6,8 @@ const portfolioItems = [
 
     description:
       "Morningacademy is a video platform built in order to share guides by Morningtrain to customers. The site was created using React.js, SCSS and Laravel for building a Wordpress Theme. The site utilizes WordPress user and login funtionality.",
-    img1: "/img/imageshowcase2.jpg",
-    img2: "/img/imgshowcase1.avif",
+    img1: "/img/projects/morningacademy.jpg",
+    img2: "/img/imageshowcase2.jpg",
     url: "https://morninggroup.dk.bluebird.pw/",
     date: "12/2023",
   },
