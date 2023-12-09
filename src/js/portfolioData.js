@@ -6,23 +6,22 @@ const portfolioItems = [
 
     description:
       "Morningacademy is a video platform built in order to share guides by Morningtrain to customers. The site was created using React.js, SCSS and Laravel for building a Wordpress Theme. The site utilizes WordPress user and login funtionality.",
-    img1: "/img/projects/morningacademy.jpg",
-    img2: "/img/imageshowcase2.jpg",
+    img1: "/img/projects/morningacademy-showcase.jpg",
     url: "https://morninggroup.dk.bluebird.pw/",
     date: "12/2023",
+    tools: ["React.js", "WordPress", "Laravel", "Figma"],
   },
-  {
-    id: 2,
-    title: "Morgenfest",
-    firstText: "Website Development",
+  // {
+  //   id: 2,
+  //   title: "Morgenfest",
+  //   firstText: "Website Development",
 
-    description:
-      "Morgenfest is an event page for Morningtrain. The site is a Wordpress theme made with React and Laravel.",
-    img1: "/img/imageshowcase2.jpg",
-    img2: "/img/imgshowcase1.avif",
-    url: "https://morgenfest.dk.bluebird.pw/",
-    date: "10/2023",
-  },
+  //   description:
+  //     "Morgenfest is an event page for Morningtrain. The site is a Wordpress theme made with React and Laravel.",
+  //   img1: "/img/imageshowcase2.jpg",
+  //   url: "https://morgenfest.dk.bluebird.pw/",
+  //   date: "10/2023",
+  // },
   {
     id: 3,
     title: "Carlsens Kvarter",
@@ -31,10 +30,10 @@ const portfolioItems = [
 
     description:
       "This bar was in need of an updated visual identity including a website, marketing and copywriting. The solution was built with a DatoCMS, Vue.js and TailwindCSS",
-    img1: "/img/imageshowcase2.jpg",
-    img2: "/img/imgshowcase1.avif",
+    img1: "/img/projects/carlsenskvarter-showcase.jpg",
     url: "https://www.carlsens.dk/#/",
     date: "06/2023",
+    tools: ["Vue.js", "DatoCMS", "TailwindCSS", "Adobe XD"],
   },
   {
     id: 4,
@@ -43,10 +42,10 @@ const portfolioItems = [
 
     description:
       "This is a website meant to group all of Morningtrains different branches into one site. The site was created using React.js, SCSS and Laravel for building a Wordpress Theme.",
-    img1: "/img/imageshowcase2.jpg",
-    img2: "/img/imgshowcase1.avif",
+    img1: "/img/projects/morninggroup-showcase.jpg",
     url: "https://morninggroup.dk.bluebird.pw/",
     date: "09/2023",
+    tools: ["React.js", "WordPress", "Laravel", "Figma"],
   },
   {
     id: 5,
@@ -56,9 +55,9 @@ const portfolioItems = [
 
     description:
       "My group and I created a design with a green and white theme. We created new copy that fit the target group. In the project I created several components for design. I also coded all HTML and CSS for the website.",
-    img1: "/img/imageshowcase2.jpg",
-    img2: "/img/imgshowcase1.avif",
+    img1: "/img/projects/hydrovertic-showcase.jpg",
     date: "12/2022",
+    tools: ["HTML", "CSS", "Javascript"],
   },
   {
     id: 6,
@@ -67,10 +66,10 @@ const portfolioItems = [
 
     description:
       "For this project i was tasked with coding a finished design. I received a full design with desktop and mobile versions. I coded the website from scratch using HTML, CSS & Javascript.",
-    img1: "/img/imageshowcase2.jpg",
-    img2: "/img/imgshowcase1.avif",
+    img1: "/img/projects/christliebcreative-showcase.jpg",
     url: "https://christliebcreative.com/",
     date: "02/2023",
+    tools: ["HTML", "CSS", "Javascript"],
   },
 ];
 

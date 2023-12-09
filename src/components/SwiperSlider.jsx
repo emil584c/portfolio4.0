@@ -12,8 +12,6 @@ function SwiperSlider({ img1, img2, img3 }) {
         navigation
         spaceBetween={50}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {img1 && (
           <SwiperSlide>

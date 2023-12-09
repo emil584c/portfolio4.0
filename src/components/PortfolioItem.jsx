@@ -16,7 +16,16 @@ const PortfolioItem = ({ portfolioItems }) => {
     return <p>Item not found</p>;
   }
 
-  const { title, description, img1, img2, img3, url, date } = selectedItem;
+  const {
+    title,
+    description,
+    img1,
+    img2,
+    img3,
+    url,
+    date,
+    tools = [],
+  } = selectedItem;
 
   return (
     <>
@@ -24,7 +33,19 @@ const PortfolioItem = ({ portfolioItems }) => {
       <section className="portfolio-item">
         <div className="portfolio-item__inner page-container">
           <h1 className="portfolio-item__title">{title}</h1>
-          <p className="portfolio-item__date">{date}</p>
+          {tools && (
+            <div className="portfolio-item__tools-container">
+              {tools.map((tool) => (
+                <p
+                  key={tool}
+                  className="portfolio-item__tool"
+                >
+                  {tool}
+                </p>
+              ))}
+              <p className="portfolio-item__tool">{date}</p>
+            </div>
+          )}
           <p className="portfolio-item__description">{description}</p>
           {url && (
             <a
@@ -32,7 +53,7 @@ const PortfolioItem = ({ portfolioItems }) => {
               target="_blank"
               href={url}
             >
-              URLE
+              Se løsningen
             </a>
           )}
         </div>

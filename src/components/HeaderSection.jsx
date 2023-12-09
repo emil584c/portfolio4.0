@@ -1,8 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function HeaderSection() {
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = show ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [show]);
+
+  const scrollToAnchor = (anchorId) => {
+    const element = document.getElementById(anchorId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -17,17 +34,27 @@ function HeaderSection() {
           <ul>
             <li>
               <Link
-                to={"/#about"}
-                href="#about"
+                to={"/"}
+                onClick={() => scrollToAnchor("#about")}
               >
                 About
               </Link>
             </li>
             <li>
-              <Link to={"/#work"}>Projects</Link>
+              <Link
+                to={"/#work"}
+                onClick={() => scrollToAnchor("work")}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <Link to={"/#contact"}>Contact</Link>
+              <Link
+                to={"/#contact"}
+                onClick={() => scrollToAnchor("#contact")}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
 
@@ -42,13 +69,28 @@ function HeaderSection() {
         <div className="header-section__mobile-menu">
           <ul>
             <li onClick={() => setShow(!show)}>
-              <a href="#about">About</a>
+              <Link
+                to={"/"}
+                onClick={() => scrollToAnchor("#about")}
+              >
+                About
+              </Link>
             </li>
             <li onClick={() => setShow(!show)}>
-              <a href="#projects">Projects</a>
+              <Link
+                to={"/"}
+                onClick={() => scrollToAnchor("work")}
+              >
+                Projects
+              </Link>
             </li>
             <li onClick={() => setShow(!show)}>
-              <a href="#contact">Contact</a>
+              <Link
+                to={"/"}
+                onClick={() => scrollToAnchor("#contact")}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
