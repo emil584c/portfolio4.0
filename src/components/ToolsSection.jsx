@@ -26,7 +26,7 @@ function ToolsSection() {
               text={"Vue.js"}
             />
             <ToolBox
-              img={"/img/logos/figma.svg"}
+              img={"/img/logos/strapi.svg"}
               color={"#4945FF"}
               alt={"strapi logo"}
               text={"Strapi"}

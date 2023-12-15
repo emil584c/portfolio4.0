@@ -2,6 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import SwiperSlider from "./SwiperSlider";
 import HeaderSection from "./HeaderSection";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const PortfolioItem = ({ portfolioItems }) => {
   const { id } = useParams();
@@ -27,9 +30,38 @@ const PortfolioItem = ({ portfolioItems }) => {
     tools = [],
   } = selectedItem;
 
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = show ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [show]);
   return (
     <>
-      <HeaderSection />
+      <header className={`header-section ${show ? "show" : ""}`}>
+        <nav className="header-section__inner">
+          <Link
+            to={"/"}
+            className="header-section__logo"
+          >
+            lind.gg
+          </Link>
+          <ul style={{ display: "flex" }}>
+            <li>
+              <Link
+                to={"/"}
+                style={{ height: "12px" }}
+                onClick={() => scrollToAnchor("#about")}
+              >
+                Go back
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <section className="portfolio-item">
         <div className="portfolio-item__inner page-container">
           <h1 className="portfolio-item__title">{title}</h1>

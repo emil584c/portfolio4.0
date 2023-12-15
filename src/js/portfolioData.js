@@ -24,6 +24,18 @@ const portfolioItems = [
   // },
   {
     id: 3,
+    title: "Morninggroup",
+    secondText: "Website Development",
+
+    description:
+      "This is a website meant to group all of Morningtrains different branches into one site. The site was created using React.js, SCSS and Laravel for building a Wordpress Theme.",
+    img1: "/img/projects/morninggroup-showcase.jpg",
+    url: "https://morninggroup.dk.bluebird.pw/",
+    date: "09/2023",
+    tools: ["React.js", "WordPress", "Laravel", "Figma"],
+  },
+  {
+    id: 4,
     title: "Carlsens Kvarter",
     firstText: "Website Design",
     secondText: "Website Development",
@@ -34,18 +46,6 @@ const portfolioItems = [
     url: "https://www.carlsens.dk/#/",
     date: "06/2023",
     tools: ["Vue.js", "DatoCMS", "TailwindCSS", "Adobe XD"],
-  },
-  {
-    id: 4,
-    title: "Morninggroup",
-    secondText: "Website Development",
-
-    description:
-      "This is a website meant to group all of Morningtrains different branches into one site. The site was created using React.js, SCSS and Laravel for building a Wordpress Theme.",
-    img1: "/img/projects/morninggroup-showcase.jpg",
-    url: "https://morninggroup.dk.bluebird.pw/",
-    date: "09/2023",
-    tools: ["React.js", "WordPress", "Laravel", "Figma"],
   },
   {
     id: 5,
