@@ -3,7 +3,7 @@ function ContactSection() {
     <>
       <section
         className="contact-section"
-        id="about"
+        id="contact"
       >
         <div className="contact-section__inner page-container">
           <div className="title-box">

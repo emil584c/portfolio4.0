@@ -1,0 +1,26 @@
+.primary-button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 24px;
+    transition: gap 300ms;
+    width: fit-content;
+    
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 300ms;
+    }
+
+    img {
+        height: 14px;
+    }
+
+    &:hover {
+        gap: 24px;
+
+        &__text {
+            color: red !important;
+        }
+    }
+}

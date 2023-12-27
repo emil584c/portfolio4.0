@@ -11,17 +11,17 @@ const portfolioItems = [
     date: "12/2023",
     tools: ["React.js", "WordPress", "Laravel", "Figma"],
   },
-  // {
-  //   id: 2,
-  //   title: "Morgenfest",
-  //   firstText: "Website Development",
+  {
+    id: 2,
+    title: "Morgenfest",
+    firstText: "Website Development",
 
-  //   description:
-  //     "Morgenfest is an event page for Morningtrain. The site is a Wordpress theme made with React and Laravel.",
-  //   img1: "/img/imageshowcase2.jpg",
-  //   url: "https://morgenfest.dk.bluebird.pw/",
-  //   date: "10/2023",
-  // },
+    description:
+      "Morgenfest is an event page for Morningtrain. The site is a Wordpress theme made with React and Laravel.",
+    img1: "/img/imageshowcase2.jpg",
+    url: "https://morgenfest.dk.bluebird.pw/",
+    date: "10/2023",
+  },
   {
     id: 3,
     title: "Morninggroup",

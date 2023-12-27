@@ -79,6 +79,14 @@
       transition: height 500ms;
       z-index: -1;
     }
+
+    &:first-of-type {
+      .work-section__project-click {
+        @include break(mobile) {
+          display: block !important;
+        }
+      }
+    }
   }
 
   &__project-inner {
@@ -98,7 +106,7 @@
     max-height: 45px;
 
     @include break(mobile) {
-      display: block;
+      display: none;
     }
   }
 
@@ -119,6 +127,13 @@
     @include break(mobile) {
       font-size: 28px;
       margin-bottom: 8px;
+    }
+  }
+
+  &__project-text-container {
+
+    @include break(mobile){
+      display: none;
     }
   }
 

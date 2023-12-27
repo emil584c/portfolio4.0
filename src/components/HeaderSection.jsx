@@ -34,8 +34,8 @@ function HeaderSection() {
           <ul>
             <li>
               <Link
-                to={"/"}
-                onClick={() => scrollToAnchor("#about")}
+                to={"/#about"}
+                onClick={() => scrollToAnchor("about")}
               >
                 About
               </Link>
@@ -51,7 +51,7 @@ function HeaderSection() {
             <li>
               <Link
                 to={"/#contact"}
-                onClick={() => scrollToAnchor("#contact")}
+                onClick={() => scrollToAnchor("contact")}
               >
                 Contact
               </Link>

@@ -1,10 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import SwiperSlider from "./SwiperSlider";
-import HeaderSection from "./HeaderSection";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import SwiperSlider from "./SwiperSlider";
+import PrimaryButton from "./PrimaryButton";
+import SecondaryButton from "./SecondaryButton";
+import ContactSection from "./ContactSection";
 
 const PortfolioItem = ({ portfolioItems }) => {
   const { id } = useParams();
@@ -39,6 +41,7 @@ const PortfolioItem = ({ portfolioItems }) => {
       document.body.style.overflow = "auto";
     };
   }, [show]);
+
   return (
     <>
       <header className={`header-section ${show ? "show" : ""}`}>
@@ -80,21 +83,25 @@ const PortfolioItem = ({ portfolioItems }) => {
           )}
           <p className="portfolio-item__description">{description}</p>
           {url && (
-            <a
-              className="portfolio-item__link"
-              target="_blank"
-              href={url}
-            >
-              Se løsningen
-            </a>
+            <PrimaryButton
+              url={url}
+              text={"See the product"}
+            />
+          )}
+          <SwiperSlider
+            img1={img1}
+            img2={img2}
+            img3={img3}
+          />
+          {parseInt(id) > portfolioItems.length && (
+            <SecondaryButton
+              url={parseInt(id) + 1}
+              text={"Next project"}
+            />
           )}
         </div>
-        <SwiperSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-        />
       </section>
+      <ContactSection />
     </>
   );
 };

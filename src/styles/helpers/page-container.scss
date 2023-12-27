@@ -1,7 +1,7 @@
 @import "./breakpoints.scss";
 
 .page-container {
-  max-width: var(--mt--container--width, 1440px);
+  max-width: var(--mt--container--width, 1320px);
   margin: 0 auto;
 
   @include break(laptop) {
