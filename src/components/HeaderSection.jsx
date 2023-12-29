@@ -21,9 +21,23 @@ function HeaderSection() {
     }
   };
 
+  const [scrolltopdata, setscrolltopdata] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 15) {
+        setscrolltopdata("");
+      } else {
+        setscrolltopdata("scrolled");
+      }
+    });
+  }, []);
+
   return (
     <>
-      <header className={`header-section ${show ? "show" : ""}`}>
+      <header
+        className={`header-section ${show ? "show" : ""}${scrolltopdata}`}
+      >
         <nav className="header-section__inner">
           <Link
             to={"/"}

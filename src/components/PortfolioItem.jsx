@@ -42,9 +42,23 @@ const PortfolioItem = ({ portfolioItems }) => {
     };
   }, [show]);
 
+  const [scrolltopdata, setscrolltopdata] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 15) {
+        setscrolltopdata("");
+      } else {
+        setscrolltopdata("scrolled");
+      }
+    });
+  }, []);
+
   return (
     <>
-      <header className={`header-section ${show ? "show" : ""}`}>
+      <header
+        className={`header-section ${show ? "show" : ""}${scrolltopdata}`}
+      >
         <nav className="header-section__inner">
           <Link
             to={"/"}
@@ -93,11 +107,14 @@ const PortfolioItem = ({ portfolioItems }) => {
             img2={img2}
             img3={img3}
           />
-          {parseInt(id) > portfolioItems.length && (
-            <SecondaryButton
-              url={parseInt(id) + 1}
-              text={"Next project"}
-            />
+          {parseInt(id) < portfolioItems.length && (
+            <>
+              {console.log("aaaa")}
+              <SecondaryButton
+                url={parseInt(id) + 1}
+                text={"Next project"}
+              />
+            </>
           )}
         </div>
       </section>
