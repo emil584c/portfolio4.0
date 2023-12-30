@@ -84,15 +84,15 @@ function HeaderSection() {
           <ul>
             <li onClick={() => setShow(!show)}>
               <Link
-                to={"/"}
-                onClick={() => scrollToAnchor("#about")}
+                to={"/#about"}
+                onClick={() => scrollToAnchor("about")}
               >
                 About
               </Link>
             </li>
             <li onClick={() => setShow(!show)}>
               <Link
-                to={"/"}
+                to={"/#work"}
                 onClick={() => scrollToAnchor("work")}
               >
                 Projects
@@ -100,8 +100,8 @@ function HeaderSection() {
             </li>
             <li onClick={() => setShow(!show)}>
               <Link
-                to={"/"}
-                onClick={() => scrollToAnchor("#contact")}
+                to={"/#contact"}
+                onClick={() => scrollToAnchor("contact")}
               >
                 Contact
               </Link>

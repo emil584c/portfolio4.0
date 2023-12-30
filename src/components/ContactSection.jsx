@@ -16,7 +16,7 @@ function ContactSection() {
           <div className="contact-section__info-container">
             <div className="contact-section__info">
               <img
-                src="/img/icons/phone-icon.svg"
+                src="/img/icons/mail-icon.svg"
                 alt="phone icon"
               />
               <p className="contact-section__info-text">
@@ -25,7 +25,7 @@ function ContactSection() {
             </div>
             <div className="contact-section__info">
               <img
-                src="/img/icons/mail-icon.svg"
+                src="/img/icons/phone-icon.svg"
                 alt="mail icon"
               />
               <p className="contact-section__info-text">+45 42 54 48 88</p>
