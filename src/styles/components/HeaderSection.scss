@@ -43,6 +43,10 @@
           font-weight: 300;
           font-size: 20px !important;
 
+          @include break(laptop) {
+            font-size: 16px !important;
+          }
+
           &::after {
             content: "";
             transition: width 250ms linear;
