@@ -43,7 +43,7 @@ function HeaderSection() {
             to={"/"}
             className="header-section__logo"
           >
-            lind.gg
+            elind.dk
           </Link>
           <ul>
             <li>
