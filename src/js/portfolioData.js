@@ -67,7 +67,6 @@ const portfolioItems = [
     description:
       "For this project i was tasked with coding a finished design. I received a full design with desktop and mobile versions. The website was built using HTML, CSS & Javascript.",
     img1: "/img/projects/christliebcreative-showcase.jpg",
-    url: "https://christliebcreative.com/",
     date: "02/2023",
     tools: ["HTML", "CSS", "Javascript"],
   },
