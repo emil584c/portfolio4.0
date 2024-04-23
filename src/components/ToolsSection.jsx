@@ -26,10 +26,10 @@ function ToolsSection() {
               text={"Vue.js"}
             />
             <ToolBox
-              img={"/img/logos/strapi.svg"}
-              color={"#4945FF"}
-              alt={"strapi logo"}
-              text={"Strapi"}
+              img={"/img/logos/next.svg"}
+              color={"#EDEDED"}
+              alt={"nextjs logo"}
+              text={"Next.js"}
             />
             <ToolBox
               img={"/img/logos/tailwind.svg"}
@@ -48,6 +48,18 @@ function ToolsSection() {
               color={"#FF2D20"}
               alt={"laravel logo"}
               text={"Laravel"}
+            />
+            <ToolBox
+              img={"/img/logos/strapi.svg"}
+              color={"#4945FF"}
+              alt={"strapi logo"}
+              text={"Strapi"}
+            />
+            <ToolBox
+              img={"/img/logos/wordpress.svg"}
+              color={"#F4F4F4"}
+              alt={"WordPress logo"}
+              text={"WordPress"}
             />
           </div>
           <h3 className="tools-section__sub-title">Apps</h3>
