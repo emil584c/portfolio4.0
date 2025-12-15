@@ -1,6 +1,36 @@
 const portfolioItems = [
   {
     id: 1,
+    title: "Isagerstrik",
+    firstText: "Webshop Development",
+    external: true,
+    url: "https://isagerstrik.dk/",
+  },
+  {
+    id: 2,
+    title: "Justitsministeriet",
+    firstText: "Website Development",
+    external: true,
+    url: "https://www.justitsministeriet.dk/",
+  },
+  {
+    id: 3,
+    title: "TET",
+    firstText: "Website Development",
+    secondText: "Website Design",
+    external: true,
+    url: "https://www.tet.dk/",
+  },
+  {
+    id: 4,
+    title: "Netkant",
+    firstText: "Website Development",
+    secondText: "Website Design",
+    external: true,
+    url: "https://netkant.com/",
+  },
+  {
+    id: 8,
     title: "Morningacademy",
     secondText: "Website Development",
 
@@ -12,7 +42,7 @@ const portfolioItems = [
     tools: ["React.js", "WordPress", "Laravel", "Figma"],
   },
   {
-    id: 2,
+    id: 9,
     title: "Morgenfest",
     firstText: "Website Development",
 
@@ -23,7 +53,7 @@ const portfolioItems = [
     date: "10/2023",
   },
   {
-    id: 3,
+    id: 10,
     title: "Morninggroup",
     secondText: "Website Development",
 
@@ -35,7 +65,7 @@ const portfolioItems = [
     tools: ["React.js", "WordPress", "Laravel", "Figma"],
   },
   {
-    id: 4,
+    id: 11,
     title: "Carlsens Kvarter",
     firstText: "Website Design",
     secondText: "Website Development",
@@ -47,29 +77,7 @@ const portfolioItems = [
     date: "06/2023",
     tools: ["Vue.js", "DatoCMS", "TailwindCSS", "Adobe XD"],
   },
-  {
-    id: 5,
-    title: "Hydrovertic",
-    firstText: "Website Design",
-    secondText: "Website Development",
-
-    description:
-      "Hydrovertic is a Vertical gardening i worked with in my 2nd semester exam. My group and I created a design with a green and white theme. We created new copy that fit the target group. In the project I created several components for the design. I also coded the HTML, CSS and JS for the website.",
-    img1: "/img/projects/hydrovertic-showcase.jpg",
-    date: "12/2022",
-    tools: ["HTML", "CSS", "Javascript"],
-  },
-  {
-    id: 6,
-    title: "Christlieb Creative",
-    firstText: "Website Development",
-
-    description:
-      "For this project i was tasked with coding a finished design. I received a full design with desktop and mobile versions. The website was built using HTML, CSS & Javascript.",
-    img1: "/img/projects/christliebcreative-showcase.jpg",
-    date: "02/2023",
-    tools: ["HTML", "CSS", "Javascript"],
-  },
+  
 ];
 
 export default portfolioItems;

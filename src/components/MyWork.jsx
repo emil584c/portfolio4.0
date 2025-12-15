@@ -21,7 +21,9 @@ function MyWork() {
                 firstText={item.firstText}
                 secondText={item.secondText}
                 link={item.id}
+                url={item.url}
                 description={item.description}
+                external={item.external}
               />
             ))}
           </div>

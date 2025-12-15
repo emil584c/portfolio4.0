@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function ProjectBox({ title, firstText, secondText, link }) {
+function ProjectBox({ title, firstText, secondText, link, external, url }) {
+  const navigate = useNavigate();
   return (
     <>
       <article className="work-section__project">
@@ -11,14 +13,25 @@ function ProjectBox({ title, firstText, secondText, link }) {
             {secondText && (
               <p className="work-section__project-text">{secondText}</p>
             )}
+            {external && (
+              <p >
+                <a className="work-section__project-text--external" href={url} target="_blank" rel="noopener noreferrer">
+                  Visit external site
+                </a>
+              </p>
+            )}
           </div>
-          <Link
+          <div
             className="work-section__link"
-            to={`/portfolio/${link}`}
             onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
+              if (external) {
+                window.open(url, "_blank");
+              } else {
+                navigate(`/portfolio/${link}`);
+              }
             }}
-          ></Link>
+          >
+          </div>
         </div>
         <img
           className="work-section__project-click"

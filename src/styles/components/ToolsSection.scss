@@ -76,9 +76,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    aspect-ratio: 1/1;
 
     img {
       max-width: 32px;
+      object-fit: contain;
     }
 
     @include break(mobile) {

@@ -14,7 +14,7 @@ function ContactSection() {
             work. So write me a message or call me, and lets have a talk!
           </p>
           <div className="contact-section__info-container">
-            <div className="contact-section__info">
+            <a className="contact-section__info" href="mailto:emilwaellind@gmail.com">
               <img
                 src="/img/icons/mail-icon.svg"
                 alt="phone icon"
@@ -22,14 +22,14 @@ function ContactSection() {
               <p className="contact-section__info-text">
                 emilwaellind@gmail.com
               </p>
-            </div>
-            <div className="contact-section__info">
+            </a>
+            <a className="contact-section__info" href="tel:+4542544888">
               <img
                 src="/img/icons/phone-icon.svg"
                 alt="mail icon"
               />
               <p className="contact-section__info-text">+45 42 54 48 88</p>
-            </div>
+            </a>
           </div>
         </div>
       </section>

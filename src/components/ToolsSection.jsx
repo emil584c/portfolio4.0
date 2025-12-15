@@ -3,10 +3,7 @@ import ToolBox from "./ToolBox";
 function ToolsSection() {
   return (
     <>
-      <section
-        className="tools-section"
-        id="tools"
-      >
+      <section className="tools-section" id="tools">
         <div className="tools-section__inner page-container">
           <div className="title-box">
             <h2 className="tools-section__title">My tools</h2>
@@ -18,12 +15,6 @@ function ToolsSection() {
               color={"#149ECA"}
               alt={"react logo"}
               text={"React"}
-            />
-            <ToolBox
-              img={"/img/logos/vue.svg"}
-              color={"#42D392"}
-              alt={"vue logo"}
-              text={"Vue.js"}
             />
             <ToolBox
               img={"/img/logos/next.svg"}
@@ -44,22 +35,28 @@ function ToolsSection() {
               text={"SCSS"}
             />
             <ToolBox
+              img={"/img/logos/new-php-logo.svg"}
+              color={"#F4F4F4"}
+              alt={"PHP logo"}
+              text={"PHP"}
+            />
+            <ToolBox
               img={"/img/logos/laravel.svg"}
               color={"#FF2D20"}
               alt={"laravel logo"}
               text={"Laravel"}
             />
             <ToolBox
-              img={"/img/logos/strapi.svg"}
-              color={"#4945FF"}
-              alt={"strapi logo"}
-              text={"Strapi"}
-            />
-            <ToolBox
               img={"/img/logos/wordpress.svg"}
               color={"#F4F4F4"}
               alt={"WordPress logo"}
               text={"WordPress"}
+            />
+            <ToolBox
+              img={"/img/logos/woo_logo_white.png"}
+              color={"#873EFF"}
+              alt={"Woocommerce logo"}
+              text={"WooCommerce"}
             />
           </div>
           <h3 className="tools-section__sub-title">Apps</h3>
@@ -75,12 +72,6 @@ function ToolsSection() {
               color={"#A259FF"}
               alt={"figma logo"}
               text={"Figma"}
-            />
-            <ToolBox
-              img={"/img/logos/slack.svg"}
-              color={"#2FB67F"}
-              alt={"slack logo"}
-              text={"Slack"}
             />
             <ToolBox
               img={"/img/logos/github.svg"}
